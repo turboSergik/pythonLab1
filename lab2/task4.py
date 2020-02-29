@@ -7,10 +7,10 @@ def cached(func):
 
         s = str(a) + " " + str(b)
         if cache_map.get(s) is not None:
-            print("From cache ", end='')
+            # print("From cache ", end='')
             return cache_map[s]
 
-        print("Calc without cache ", end='')
+        # print("Calc without cache ", end='')
 
         temp = func(a, b)
         cache_map[s] = temp
