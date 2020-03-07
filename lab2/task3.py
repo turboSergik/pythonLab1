@@ -84,6 +84,10 @@ class Vector:
             s = s + str(i) + " "
         return s
 
+    def __del__(self, *args, **kwargs):
+        print(kwargs)
+        # return super(Vector, self).__del__(*args, **kwargs)
+
 
 def main():
 
